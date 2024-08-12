@@ -40,8 +40,9 @@ function render(variables = {}) {
           <h1>${variables.name == null ? "Your name" : variables.name} ${
     variables.lastName == null ? "Your lastname" : variables.lastName
   }</h1> 
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h2>${variables.role == null ? "Profession" : variables.role}</h2>
+          <h3>${variables.city == null ? "City" : variables.city}</h3>
+          <h3>${variables.country == null ? "Country" : variables.country}</h3>
           <ul class="${variables.socialMediaPosition}" >
             <li><a href="https://twitter.com/${
               variables.twitter == null ? "4geeksacademy" : variables.twitter
